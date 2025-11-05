@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+void q2_subtracao();
 void q7_fatorial();
 void q14_somatorio_invervalo();
 void q21_maior_que();
@@ -114,6 +114,16 @@ int main() {
     }
 
     return 0;
+}
+
+void q2_subtracao () {
+    int valor1, valor2, res;
+
+    scanf("%d - %d", &valor1, &valor2);
+
+    res = valor1 - valor2;
+
+    printf("%d", res);
 }
 
 void q7_fatorial() {
