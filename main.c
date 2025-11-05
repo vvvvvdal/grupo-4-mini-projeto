@@ -1,8 +1,11 @@
 #include <stdio.h>
 void q2_subtracao();
 void q7_fatorial();
+void q9_or();
 void q14_somatorio_invervalo();
+void q16_minimo();
 void q21_maior_que();
+void q23_menor_igual();
 void q28_nor();
 
 int main() {
@@ -116,14 +119,14 @@ int main() {
     return 0;
 }
 
-void q2_subtracao () {
-    int valor1, valor2, res;
+void q2_subtracao() {
+    int valor1, valor2, res; //mudo as variaveis pra "a" e "b"?
 
     scanf("%d - %d", &valor1, &valor2);
 
     res = valor1 - valor2;
 
-    printf("%d", res);
+    printf("%d\n", res);
 }
 
 void q7_fatorial() {
@@ -139,6 +142,16 @@ void q7_fatorial() {
     printf("%lld\n", fatorial);
 }
 
+void q9_or() {
+    int valor1, valor2, res;
+
+    scanf("%d | %d", &valor1, &valor2);
+
+    res = valor1 | valor2;
+
+    printf("%d\n", res);
+}
+
 void q14_somatorio_invervalo() {
     int a, b, i;
     long long int soma = 0;
@@ -149,6 +162,17 @@ void q14_somatorio_invervalo() {
     }
 
     printf("%lld\n", soma);
+}
+
+void q16_minimo() {
+    int valor1, valor2;
+
+    scanf("%d min %d", &valor1, &valor2);
+
+    if (valor1 < valor2)
+        printf("%d\n", valor1);
+    else 
+        printf("%d\n", valor2);
 }
 
 void q21_maior_que() {
@@ -164,6 +188,17 @@ void q21_maior_que() {
     } else {
         printf("NAO\n");
     }
+}
+
+void q23_menor_igual() {
+    int valor1, valor2;
+
+    scanf("%d <= %d", &valor1, &valor2);
+
+    if (valor1 <= valor2)
+        printf("SIM\n");
+    else
+        printf("NAO\n");
 }
 
 void q28_nor() {
