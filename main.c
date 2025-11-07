@@ -203,7 +203,7 @@ void q16_minimo() {
 
 void q18_abs(){
     int valor1;
-    scanf("%d", &valor1);
+    scanf("%d abs", &valor1);
 
     if(valor1 < 0) valor1 *= -1;
     printf("%d\n", valor1);
