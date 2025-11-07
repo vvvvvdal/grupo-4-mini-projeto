@@ -16,6 +16,7 @@ int main() {
     int questao = -1;
 
     while(questao != 0) {
+        questao = -1;
         printf("----------------------------------\n");
         printf("--escolha uma questao: de 1 a 28--\n");
         printf("(digite 0 para encerrar o programa)\n");
@@ -23,6 +24,8 @@ int main() {
         printf("opcao: ");
         scanf("%d", &questao);
         printf("\n");
+        system("cls"); //windows
+        //system("clear"); linux
 
         switch (questao) {
             case 0:
@@ -120,6 +123,9 @@ int main() {
                 printf("executando a questao 28...\n");
                 q28_nor();
                 break;
+            default:
+                printf("valor invalido\n");
+                break;
         }
 
     }
@@ -140,7 +146,7 @@ void q2_subtracao() {
 void q4_divisao(){
     double valor1, valor2, res;
 
-    scanf("%lf%lf", &valor1, &valor2);
+    scanf("%lf / %lf", &valor1, &valor2);
 
     res = valor1 / valor2;
     printf("%.3lf\n", res);
