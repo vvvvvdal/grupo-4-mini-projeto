@@ -1,11 +1,15 @@
 #include <stdio.h>
 void q2_subtracao();
+void q5_divisao();
 void q7_fatorial();
 void q9_or();
+void q11_shift_direita();
 void q14_somatorio_invervalo();
 void q16_minimo();
+void q18_abs();
 void q21_maior_que();
 void q23_menor_igual();
+void q25_and();
 void q28_nor();
 
 int main() {
@@ -38,6 +42,7 @@ int main() {
                 break;
             case 5:
                 printf("executando a questao 5...\n");
+                q5_divisao();
                 break;
             case 6:
                 printf("executando a questao 6...\n");
@@ -57,6 +62,7 @@ int main() {
                 break;
             case 11:
                 printf("executando a questao 11...\n");
+                q11_shift_direita();
                 break;
             case 12:
                 printf("executando a questao 12...\n");
@@ -79,6 +85,7 @@ int main() {
                 break;
             case 18:
                 printf("executando a questao 18...\n");
+                q18_abs();
                 break;
             case 19:
                 printf("executando a questao 19...\n");
@@ -101,6 +108,7 @@ int main() {
                 break;
             case 25:
                 printf("executando a questao 25...\n");
+                q25_and();
                 break;
             case 26:
                 printf("executando a questao 26...\n");
@@ -162,6 +170,15 @@ void q9_or() {
     printf("%d\n", res);
 }
 
+void q11_shift_direita(){
+    int a, b, res;
+
+    scanf("%d%d", &valor1, &valor2);
+    res = a >> b;
+
+    printf("%d\n", res);
+}
+
 void q14_somatorio_invervalo() {
     int a, b, i;
     long long int soma = 0;
@@ -183,6 +200,14 @@ void q16_minimo() {
         printf("%d\n", valor1);
     else 
         printf("%d\n", valor2);
+}
+
+void q18_abs(){
+    int valor1;
+    scanf("%d", &valor1);
+
+    if(valor1 < 0) valor1 *= -1;
+    printf("%d\n", valor1);
 }
 
 void q21_maior_que() {
@@ -209,6 +234,14 @@ void q23_menor_igual() {
         printf("SIM\n");
     else
         printf("NAO\n");
+}
+
+void q25_and(){
+    int valor1, valor2;
+    scanf("%d && %d", &valor1, &valor2);
+
+    if(valor1 == 0 || valor2 == 0) printf("NAO\n");
+    else printf("SIM\n");
 }
 
 void q28_nor() {
