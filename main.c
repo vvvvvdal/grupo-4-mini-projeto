@@ -173,7 +173,7 @@ void q9_or() {
 void q11_shift_direita(){
     int a, b, res;
 
-    scanf("%d%d", &valor1, &valor2);
+    scanf("%d%d", &a, &b);
     res = a >> b;
 
     printf("%d\n", res);
