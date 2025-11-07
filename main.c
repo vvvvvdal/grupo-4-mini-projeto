@@ -129,6 +129,16 @@ void q2_subtracao() {
     printf("%d\n", res);
 }
 
+void q5_divisao(){
+    int valor1, valor2;
+    double res;
+
+    scanf("%d%d", &valor1, &valor2);
+
+    res = valor1 / valor2;
+    printf("%.3lf\n", res);
+}
+
 void q7_fatorial() {
     int n, i;
     long long int fatorial = 1;
