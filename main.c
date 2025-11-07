@@ -1,6 +1,6 @@
 #include <stdio.h>
 void q2_subtracao();
-void q5_divisao();
+void q4_divisao();
 void q7_fatorial();
 void q9_or();
 void q11_shift_direita();
@@ -39,10 +39,10 @@ int main() {
                 break;
             case 4:
                 printf("executando a questao 4...\n");
+                q4_divisao();
                 break;
             case 5:
                 printf("executando a questao 5...\n");
-                q5_divisao();
                 break;
             case 6:
                 printf("executando a questao 6...\n");
@@ -137,7 +137,7 @@ void q2_subtracao() {
     printf("%d\n", res);
 }
 
-void q5_divisao(){
+void q4_divisao(){
     int valor1, valor2;
     double res;
 
