@@ -140,7 +140,7 @@ void q2_subtracao() {
 void q4_divisao(){
     double valor1, valor2, res;
 
-    scanf("%d%d", &valor1, &valor2);
+    scanf("%lf%lf", &valor1, &valor2);
 
     res = valor1 / valor2;
     printf("%.3lf\n", res);
