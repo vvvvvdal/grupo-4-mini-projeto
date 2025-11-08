@@ -1,0 +1,12 @@
+void q2_subtracao();
+void q4_divisao();
+void q7_fatorial();
+void q9_or();
+void q11_shift_direita();
+void q14_somatorio_invervalo();
+void q16_minimo();
+void q18_abs();
+void q21_maior_que();
+void q23_maior_igual();
+void q25_and();
+void q28_nor();
