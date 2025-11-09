@@ -1,17 +1,21 @@
 #include <stdio.h>
 void q2_subtracao();
+void q3_multiplicacao();
 void q4_divisao();
 void q5_resto();
 void q7_fatorial();
 void q9_or();
+void q10_XOR();
 void q11_shift_direita();
 void q12_shift_esquerda();
 void q14_somatorio_invervalo();
 void q16_minimo();
+void q17_max();
 void q18_abs();
 void q19_igualdade();
 void q21_maior_que();
-void q23_menor_igual();
+void q23_maior_igual();
+void q24_menor_igual();
 void q25_and();
 void q26_nand();
 void q28_nor();
@@ -43,6 +47,7 @@ int main() {
                 break;
             case 3:
                 printf("executando a questao 3...\n");
+                q3_multiplicacao();
                 break;
             case 4:
                 printf("executando a questao 4...\n");
@@ -67,6 +72,7 @@ int main() {
                 break;
             case 10:
                 printf("executando a questao 10...\n");
+                q10_XOR();
                 break;
             case 11:
                 printf("executando a questao 11...\n");
@@ -91,6 +97,7 @@ int main() {
                 break;
             case 17:
                 printf("executando a questao 17...\n");
+                q17_max();
                 break;
             case 18:
                 printf("executando a questao 18...\n");
@@ -112,9 +119,11 @@ int main() {
                 break;
             case 23:
                 printf("executando a questao 23...\n");
+                q23_maior_igual();
                 break;
             case 24:
                 printf("executando a questao 24...\n");
+                q24_menor_igual();
                 break;
             case 25:
                 printf("executando a questao 25...\n");
@@ -149,6 +158,18 @@ void q2_subtracao() {
     res = valor1 - valor2;
 
     printf("%d\n", res);
+}
+
+void q3_multiplicacao(){
+    int num1, num2, res;
+
+    printf("digite uma multiplicacao no formato \"a*b\"\n");
+
+    scanf("%d * %d", &num1, &num2);
+
+    res = num1 * num2;
+
+    printf("O resultado da multiplicacao e: %d\n", res);
 }
 
 void q4_divisao(){
@@ -192,6 +213,18 @@ void q9_or() {
     printf("%d\n", res);
 }
 
+void q10_XOR(){
+    int num1, num2, res;
+
+    printf("digite a entrada XOR no formato a ^ b: \n");
+
+    scanf("%d ^ %d", &num1, &num2);
+
+    res = num1 ^ num2;
+
+    printf("o resultado de %d ^ %d e: %d\n", num1, num2, res);
+}
+
 void q11_shift_direita(){
     int a, b, res;
 
@@ -233,6 +266,22 @@ void q16_minimo() {
         printf("%d\n", valor2);
 }
 
+void q17_max(){
+    int num1, num2, res;
+
+    printf("Digite dois numeros no formato A max B: \n");
+
+    scanf("%d max %d", &num1, &num2);
+
+    if(num1>num2){
+        res = num1;
+    } else {
+        res = num2;
+    }
+
+    printf("O numero maximo e: %d\n", res);
+}
+
 void q18_abs(){
     int valor1;
     scanf("%d abs", &valor1);
@@ -267,15 +316,32 @@ void q21_maior_que() {
     }
 }
 
-void q23_menor_igual() {
+void q23_maior_igual() {
     int valor1, valor2;
 
-    scanf("%d <= %d", &valor1, &valor2);
+    scanf("%d >= %d", &valor1, &valor2);
 
-    if (valor1 <= valor2)
+    if (valor1 >= valor2){
         printf("SIM\n");
-    else
+    }
+    else {
         printf("NAO\n");
+}
+
+void q24_menor_igual() {
+    int num1, num2, res;
+
+    printf("Digite dois numeros: \n");
+
+    scanf("%d %d", &num1, &num2);
+
+    printf("O primeiro numero e maior que o segundo?\n");
+
+    if(num1<=num2){
+        printf("SIM\n");
+    } else {
+        printf("NAO\n");
+    }
 }
 
 void q25_and(){
