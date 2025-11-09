@@ -319,7 +319,11 @@ void q21_maior_que() {
 void q23_maior_igual() {
     int valor1, valor2;
 
+    printf("Digite dois numeros: \n");
+
     scanf("%d >= %d", &valor1, &valor2);
+
+    printf("O primeiro numero e maior ou igual ao segundo?\n");
 
     if (valor1 >= valor2){
         printf("SIM\n");
@@ -335,7 +339,7 @@ void q24_menor_igual() {
 
     scanf("%d %d", &num1, &num2);
 
-    printf("O primeiro numero e maior que o segundo?\n");
+    printf("O primeiro numero e menor ou igual ao segundo?\n");
 
     if(num1<=num2){
         printf("SIM\n");
