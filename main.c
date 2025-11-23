@@ -1,19 +1,23 @@
 #include <stdio.h>
+void q1_soma ();
 void q2_subtracao();
 void q3_multiplicacao();
 void q4_divisao();
 void q5_resto();
 void q7_fatorial();
+void q8_and_bit_a_bit();
 void q9_or();
 void q10_XOR();
 void q11_shift_direita();
 void q12_shift_esquerda();
 void q14_somatorio_invervalo();
+void q15_produtorio_de_um_intervalo();
 void q16_minimo();
 void q17_max();
 void q18_abs();
 void q19_igualdade();
 void q21_maior_que();
+void q22_menor_que();
 void q23_maior_igual();
 void q24_menor_igual();
 void q25_and();
@@ -150,6 +154,16 @@ int main() {
     return 0;
 }
 
+void q1_soma(){
+    int a, b, res=0;
+
+    scanf("%d + %d",&a,&b);
+
+    res = a + b;
+
+    printf("%d\n",res);
+}
+
 void q2_subtracao() {
     int valor1, valor2, res; //mudo as variaveis pra "a" e "b"?
 
@@ -203,6 +217,16 @@ void q7_fatorial() {
     printf("%lld\n", fatorial);
 }
 
+void q8_and_bit_a_bit(){
+    int a, b, res=0;
+
+    scanf("%d & %d",&a,&b);
+
+    res = a & b;
+
+    printf("%d\n",res);
+}
+
 void q9_or() {
     int valor1, valor2, res;
 
@@ -253,6 +277,24 @@ void q14_somatorio_invervalo() {
     }
 
     printf("%lld\n", soma);
+}
+
+void q15_produtorio_de_um_intervalo(){
+    int a, b;
+
+    long long int res=1;
+
+    int i;
+
+    scanf("%d P %d",&a,&b);
+
+    for(i=a;i<=b;i++){
+
+        res*=i;
+
+    }
+
+    printf("%lld\n",res);
 }
 
 void q16_minimo() {
@@ -316,6 +358,20 @@ void q21_maior_que() {
     }
 }
 
+void q22_menor_que(){
+    int a, b, res;
+
+    scanf ("%d < %d",&a,&b);
+
+    if(a<b){res=1;// 1 SIM,verdadeiro
+
+    }else if(a>=b){ res=0;// 0 NÃO,falso
+
+    }
+
+    printf("%s\n",(res==1?"SIM":"NAO"));
+}
+
 void q23_maior_igual() {
     int valor1, valor2;
 
@@ -330,6 +386,7 @@ void q23_maior_igual() {
     }
     else {
         printf("NAO\n");
+    }
 }
 
 void q24_menor_igual() {
