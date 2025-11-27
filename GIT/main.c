@@ -45,7 +45,7 @@ int main() {
                 printf("divisao\n");
                 printf("digite dois valores reais separados por / .\n");
                 q4_divisao(&a_double, &b_double, &resultado_double);
-                printf("%d\n", resultado_double);
+                printf("%.3lf\n", resultado_double);
                 break;
             case 5:
                 printf("executando a questao 5...\n");
@@ -62,7 +62,7 @@ int main() {
                 printf("fatoracao\n");
                 printf("digite um valor inteiro seguido por ! .\n");
                 q7_fatorial(&a_lli, &resultado_lli);
-                printf("%d\n", resultado_lli);
+                printf("%lld\n", resultado_lli);
                 break;
             case 8:
                 printf("executando a questao 8...\n");
@@ -125,7 +125,7 @@ int main() {
             case 18:
                 printf("executando a questao 18...\n");
                 printf("valor absoluto de um numero\n");
-                printf("digite dois valores inteiros separados por \"abs\".\n");
+                printf("digite um valor inteiro com \"abs\" depois.\n");
                 q18_abs(&a_int, &resultado_int);
                 printf("%d\n", resultado_int);
                 break;
@@ -144,7 +144,8 @@ int main() {
                 printf("maior que\n");
                 printf("digite dois valores inteiros separados por > .\n");
                 q21_maior_que(&a_int, &b_int, &resultado_int);
-                printf("%d\n", resultado_int);
+                if (resultado_int == 1) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 22:
                 printf("executando a questao 22...\n");
