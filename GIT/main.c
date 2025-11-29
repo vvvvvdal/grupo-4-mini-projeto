@@ -56,6 +56,9 @@ int main() {
                 printf("executando a questao 6...\n");
                 printf("potencia\n");
                 printf("digite dois valores inteiros separados por ~ .\n");
+                q6_potencia(&a_int, &b_int, &resultado_lli);
+                if(b_int < 0) printf("Expoente Invalido\n");//expoente precisa ser >0, pois o resultado eh long long int
+                else printf("%lld\n", resultado_lli);
                 break;
             case 7:
                 printf("executando a questao 7...\n");
@@ -97,6 +100,8 @@ int main() {
                 printf("executando a questao 13...\n");
                 printf("media de dois numeros\n");
                 printf("digite dois valores inteiros separados por \"M\".\n");
+                q13_media(&a_int, &b_int, &resultado_double);
+                printf("%.3lf\n", resultado_double);
                 break;
             case 14:
                 printf("executando a questao 14...\n");
@@ -138,6 +143,9 @@ int main() {
                 printf("executando a questao 20...\n");
                 printf("diferenca\n");
                 printf("digite dois valores inteiros separados por != .\n");
+                q20_diferenca(&a_int, &b_int, &resultado_int);
+                if(resultado_int == 1) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 21:
                 printf("executando a questao 21...\n");
@@ -181,6 +189,10 @@ int main() {
                 printf("executando a questao 27...\n");
                 printf("OR\n");
                 printf("digite 1 ou 0 separados por || .\n");
+                q27_or(&a_int, &b_int, &resultado_int);
+                if(resultado_int == -1) printf("Entrada Invalida\n");//entrada diferente de 1 e 0
+                else if(resultado_int == 1) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 28:
                 printf("executando a questao 28...\n");
