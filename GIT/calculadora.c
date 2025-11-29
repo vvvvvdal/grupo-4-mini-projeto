@@ -16,6 +16,12 @@ void q4_divisao(double *a, double *b, double *resultado){
     *resultado = 1.0 * (*a) / (*b);
 }
 
+void q5_resto(int *a, int *b, int *resultado){
+    scanf("%d %% %d", a, b);
+
+    *resultado = (*a) % (*b);
+}
+
 void q6_potencia(int *a, int *b, long long int *resultado){
     scanf("%d ~ %d", a, b);
     *resultado = 1;
@@ -46,6 +52,12 @@ void q10_XOR(int *a, int *b, int *resultado){
 void q11_shift_direita(int *a, int *b, int *resultado){
     scanf("%d >> %d", a, b);
     *resultado = *a >> *b;
+}
+
+void q12_shift_esquerda(int *a, int *b, int *resultado){
+    scanf("%d << %d", a, b);
+
+    *resultado = *a << *b;
 }
 
 void q13_media(int *a, int *b, double *resultado){
@@ -81,6 +93,13 @@ void q18_abs(int *a, int *resultado) {
     *resultado = *a;
 }
 
+void q19_igualdade(int *a, int *b, int *resultado){
+    scanf("%d == %d", a, b);
+
+    if(*a == *b) *resultado = 1;
+    else *resultado = 0;
+}
+
 void q20_diferenca(int *a, int *b, int *resultado){
     scanf("%d != %d", a, b);
     if(*a != *b) *resultado = 1;
@@ -110,6 +129,15 @@ void q25_and(int *a, int *b, int *resultado) {
     if((*a != 0 && *a != 1) || (*b != 0 && *b != 1)) *resultado = -1;//entrada invalida
     else if(*a == 0 || *b == 0) *resultado = 0;
     else *resultado = 1;
+}
+
+void q26_nand(int *a, int *b, int *resultado){
+    scanf("%d !& %d", a, b);
+
+    if(*a == 0 && *b == 0) *resultado = 1;
+    else if(*a == 0 && *b == 1) *resultado = 1;
+    else if(*a == 1 && *b == 0) *resultado = 1;
+    else if(*a == 1 && *b == 1) *resultado = 0;
 }
 
 void q27_or(int *a, int *b, int *resultado){

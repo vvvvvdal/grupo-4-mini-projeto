@@ -53,6 +53,8 @@ int main() {
                 printf("executando a questao 5...\n");
                 printf("resto\n");
                 printf("digite dois valores inteiros separados por %% .\n");
+                q5_resto(&a_int, &b_int, &resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 6:
                 printf("executando a questao 6...\n");
@@ -99,6 +101,8 @@ int main() {
                 printf("executando a questao 12...\n");
                 printf("shift a esquerda\n");
                 printf("digite dois valores inteiros separados por << .\n");
+                q12_shift_esquerda(&a_int, &b_int, &resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 13:
                 printf("executando a questao 13...\n");
@@ -144,6 +148,9 @@ int main() {
                 printf("executando a questao 19...\n");
                 printf("igualdade\n");
                 printf("digite dois valores inteiros separados por == .\n");
+                q19_igualdade(&a_int, &b_int, &resultado_int);
+                if(resultado_int)printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 20:
                 printf("executando a questao 20...\n");
@@ -194,6 +201,9 @@ int main() {
                 printf("executando a questao 26...\n");
                 printf("NAND\n");
                 printf("digite 1 ou 0 separados por !& .\n");
+                q26_nand(&a_int, &b_int, &resultado_int);
+                if(resultado_int) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 27:
                 printf("executando a questao 27...\n");
