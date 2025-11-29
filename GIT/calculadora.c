@@ -6,6 +6,11 @@ void q2_subtracao(int *a, int *b, int *resultado){
     *resultado = *a - *b;
 }
 
+void q3_multiplicacao(int *a, int *b, int *resultado){
+    scanf("%d * %d", a, b);     //nao deveria ser long long int? porque com numero grange da overflow
+    *resultado = *a * *b;
+}
+
 void q4_divisao(double *a, double *b, double *resultado){
     scanf("%lf / %lf", a, b);
     *resultado = 1.0 * (*a) / (*b);
@@ -31,6 +36,11 @@ void q7_fatorial(long long int *a, long long int *resultado) {
 void q9_or(int *a, int *b, int *resultado) {
     scanf("%d | %d", a, b);
     *resultado = *a | *b;
+}
+
+void q10_XOR(int *a, int *b, int *resultado){
+    scanf("%d ^ %d", a, b);
+    *resultado = *a ^ *b;
 }
 
 void q11_shift_direita(int *a, int *b, int *resultado){
@@ -59,6 +69,12 @@ void q16_minimo(int *a, int *b, int *resultado) {
     *resultado = min;
 }
 
+void q17_max(int *a, int *b, int *resultado){
+    scanf("%d max %d", a, b);
+    if(*a > *b) *resultado = *a;
+    else *resultado = *b;
+}
+
 void q18_abs(int *a, int *resultado) {
     scanf("%d abs", a);
     if(*a < 0) *a *= -1;
@@ -80,6 +96,12 @@ void q21_maior_que(int *a, int *b, int *resultado) {
 void q23_maior_igual(int *a, int *b, int *resultado) {
     scanf("%d >= %d", a, b);
     if (*a >= *b) *resultado = 1;
+    else *resultado = 0;
+}
+
+void q24_menor_igual(int *a, int *b, int *resultado) {
+    scanf("%d <= %d", a, b);
+    if(*a <= *b) *resultado = 1;
     else *resultado = 0;
 }
 

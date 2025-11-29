@@ -39,6 +39,8 @@ int main() {
                 printf("executando a questao 3...\n");
                 printf("multiplicacao\n");
                 printf("digite dois valores inteiros separados por * .\n");
+                q3_multiplicacao(&a_int, &b_int, &resultado_int);
+                printf("O resultado da multiplicacao e: %d\n", resultado_int);
                 break;
             case 4:
                 printf("executando a questao 4...\n");
@@ -83,6 +85,8 @@ int main() {
                 printf("executando a questao 10...\n");
                 printf("XOR bit a bit.\n");
                 printf("digite dois valores inteiros separados por ^ .\n");
+                q10_XOR(&a_int, &b_int, &resultado_int);
+                printf("o resultado de %d ^ %d e: %d\n", a_int, b_int, resultado_int);
                 break;
             case 11:
                 printf("executando a questao 11...\n");
@@ -126,6 +130,8 @@ int main() {
                 printf("executando a questao 17...\n");
                 printf("maximo entre dois numeros\n");
                 printf("digite dois valores inteiros separados por \"max\".\n");
+                q17_max(&a_int, &b_int, &resultado_int);
+                printf("O numero maximo e: %d\n", resultado_int);   
                 break;
             case 18:
                 printf("executando a questao 18...\n");
@@ -170,7 +176,10 @@ int main() {
             case 24:
                 printf("executando a questao 24...\n");
                 printf("menor ou igual\n");
-                printf("digite dois valores inteiros separados por >= .\n");
+                printf("digite dois valores inteiros separados por <= .\n");
+                q24_menor_igual(&a_int, &b_int, &resultado_int);
+                if(resultado_int == 1) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 25:
                 printf("executando a questao 25...\n");
