@@ -85,7 +85,8 @@ void q23_maior_igual(int *a, int *b, int *resultado) {
 
 void q25_and(int *a, int *b, int *resultado) {
     scanf("%d && %d", a, b);
-    if(*a == 0 || *b == 0) *resultado = 0;
+    if((*a != 0 && *a != 1) || (*b != 0 && *b != 1)) *resultado = -1;//entrada invalida
+    else if(*a == 0 || *b == 0) *resultado = 0;
     else *resultado = 1;
 }
 

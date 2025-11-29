@@ -177,7 +177,8 @@ int main() {
                 printf("AND\n");
                 printf("digite 1 ou 0 separados por && .\n");
                 q25_and(&a_int, &b_int, &resultado_int);
-                if (resultado_int == 1) printf("SIM\n");
+                if(resultado_int == -1) printf("Entrada Invalida\n");//entrada diferente de 0 e 1
+                else if (resultado_int == 1) printf("SIM\n");
                 else printf("NAO\n");
                 break;
             case 26:
