@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include "calculadora.h"
+void q1_soma(int*a,int*b,int*resultado){
+    int soma=0;
+    scanf("%d + %d", a, b);
+    soma = *a + *b;
+    *resultado=soma;
+}
 
 void q2_subtracao(int *a, int *b, int *resultado){
     scanf("%d - %d", a, b);
@@ -39,6 +45,11 @@ void q7_fatorial(long long int *a, long long int *resultado) {
     *resultado = fatorial;
 }
 
+void q8_and_bit_a_bit(int *a,int *b,int *resultado){
+    scanf("%d & %d%*c", a, b);
+    *resultado= *a & *b;
+}
+
 void q9_or(int *a, int *b, int *resultado) {
     scanf("%d | %d", a, b);
     *resultado = *a | *b;
@@ -71,6 +82,16 @@ void q14_somatorio_invervalo(int *a, int *b, int *resultado) {
     scanf("%d S %d", a, b);
     for(i = *a; i <= *b; i++) soma += i;
     *resultado = soma;
+}
+
+void q15_produtorio_de_um_intervalo(int *a, int *b, long long int *resultado){
+    int i;
+    long long int aux = 1;
+    scanf("%d P %d", a, b);
+    for(i = *a; i <= *b; i++){
+        aux*= i;
+        *resultado = aux;
+    }
 }
 
 void q16_minimo(int *a, int *b, int *resultado) {
@@ -110,6 +131,13 @@ void q21_maior_que(int *a, int *b, int *resultado) {
     scanf("%d > %d", a, b);
     if(*a > *b) *resultado = 1;
     else *resultado = 0;
+}
+
+void q22_menor_que(int *a, int *b, int *resultado){
+    scanf ("%d < %d", a, b);
+    if(*a < *b){*resultado = 1;// 1 SIM,verdadeiro
+    }else if(*a >= *b){ *resultado = 0;// 0 NÃO,falso
+    }
 }
 
 void q23_maior_igual(int *a, int *b, int *resultado) {

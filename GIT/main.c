@@ -27,6 +27,8 @@ int main() {
                 printf("executando a questao 1...\n");
                 printf("soma\n");
                 printf("digite dois valores inteiros separados por + .\n");
+                q1_soma(&a_int, &b_int, &resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 2:
                 printf("executando a questao 2...\n");
@@ -75,6 +77,8 @@ int main() {
                 printf("executando a questao 8...\n");
                 printf("AND bit a bit\n");
                 printf("digite dois valores inteiros separados por & .\n");
+                q8_and_bit_a_bit(&a_int, &b_int, &resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 9:
                 printf("executando a questao 9...\n");
@@ -122,6 +126,8 @@ int main() {
                 printf("executando a questao 15...\n");
                 printf("produtorio de um intervalo\n");
                 printf("digite dois valores inteiros separados por \"P\".\n");
+                q15_produtorio_de_um_intervalo(&a_int, &b_int, &resultado_lli);
+                printf("%lld\n", resultado_lli);
                 break;
             case 16:
                 printf("executando a questao 16...\n");
@@ -172,6 +178,9 @@ int main() {
                 printf("executando a questao 22...\n");
                 printf("menor que\n");
                 printf("digite dois valores inteiros separados pelo simbolo < .\n");
+                q22_menor_que(&a_int, &b_int, &resultado_int);
+                if(resultado_int == 1) printf("SIM\n");
+                else printf("NAO\n");
                 break;
             case 23:
                 printf("executando a questao 23...\n");
