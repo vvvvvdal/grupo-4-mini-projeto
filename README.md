@@ -1,3 +1,10 @@
+O erro acontece porque o símbolo do **OR** (`|`) é o mesmo caractere usado para separar as colunas das tabelas no Markdown. Quando você coloca um `|` solto, o GitHub acha que você está criando uma nova coluna e "quebra" a linha, fazendo o texto sumir.
+
+Para corrigir, precisamos colocar uma **barra invertida** (`\`) antes do símbolo. Exemplo: `\|`.
+
+Aqui está o código do `README.md` corrigido. Pode copiar e substituir o anterior que agora a tabela vai aparecer perfeita:
+
+````markdown
 # Mini Projeto - Calculadora Multifuncional em C
 
 Este projeto foi desenvolvido como atividade avaliativa da disciplina de Introdução à Programação. O objetivo foi criar uma calculadora robusta em linguagem C, capaz de realizar 28 operações diferentes, variando desde aritmética básica até operações bit-a-bit (bitwise), estatística básica e lógica booleana.
@@ -25,6 +32,35 @@ O desenvolvimento seguiu rigorosamente as instruções de utilizar funções do 
 
 Como o projeto está dividido em módulos (`main.c`, `calculadora.c` e `calculadora.h`), é necessário compilar os arquivos de código-fonte juntos.
 
+### Pré-requisitos
+* Compilador GCC instalado.
+
+### Passo a passo
+
+1. **Clone o repositório** (ou baixe os arquivos):
+   ```bash
+   git clone <link-do-seu-repositorio>
+````
+
+2.  **Compile o código** através do terminal:
+
+    ```bash
+    gcc main.c calculadora.c -o calculadora
+    ```
+
+3.  **Execute o programa:**
+
+      * **No Linux/Mac:**
+        ```bash
+        ./calculadora
+        ```
+      * **No Windows:**
+        ```bash
+        calculadora.exe
+        ```
+
+-----
+
 ## 📖 Instruções de Uso
 
 O programa funciona através de um menu numerado controlado por um loop. O fluxo de utilização é o seguinte:
@@ -51,7 +87,7 @@ O programa funciona através de um menu numerado controlado por um loop. O fluxo
 | **6** | Potência | `~` | Base elevada ao expoente. |
 | **7** | Fatorial | `!` | Fatorial de um número. |
 | **8** | AND (Bitwise) | `&` | Operação E bit a bit. |
-| **9** | OR (Bitwise) | `|` | Operação OU bit a bit. |
+| **9** | OR (Bitwise) | `\|` | Operação OU bit a bit. |
 | **10** | XOR (Bitwise) | `^` | Operação OU Exclusivo bit a bit. |
 | **11** | Shift Right | `>>` | Deslocamento de bits à direita. |
 | **12** | Shift Left | `<<` | Deslocamento de bits à esquerda. |
@@ -69,8 +105,8 @@ O programa funciona através de um menu numerado controlado por um loop. O fluxo
 | **24** | Menor ou Igual | `<=` | Comparação menor ou igual. |
 | **25** | AND Lógico | `&&` | E lógico (Boolean). |
 | **26** | NAND Lógico | `!&` | NÃO E lógico. |
-| **27** | OR Lógico | `||` | OU lógico (Boolean). |
-| **28** | NOR Lógico | `!|` | NÃO OU lógico. |
+| **27** | OR Lógico | `\|\|` | OU lógico (Boolean). |
+| **28** | NOR Lógico | `!\|` | NÃO OU lógico. |
 
 -----
 
