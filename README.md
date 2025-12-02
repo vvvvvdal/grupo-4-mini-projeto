@@ -86,8 +86,4 @@ Para atender aos requisitos técnicos do projeto:
       * `main.c`: Responsável pela interface com o usuário e controle de fluxo.
       * `calculadora.c`: Contém a lógica matemática de todas as funções.
       * `calculadora.h`: Arquivo de cabeçalho com os protótipos das funções.
-
-<!-- end list -->
-
-```
-```
+-----
