@@ -42,7 +42,7 @@ int main() {
                 printf("multiplicacao\n");
                 printf("digite dois valores inteiros separados por * .\n");
                 q3_multiplicacao(&a_int, &b_int, &resultado_int);
-                printf("O resultado da multiplicacao e: %d\n", resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 4:
                 printf("executando a questao 4...\n");
@@ -92,7 +92,7 @@ int main() {
                 printf("XOR bit a bit.\n");
                 printf("digite dois valores inteiros separados por ^ .\n");
                 q10_XOR(&a_int, &b_int, &resultado_int);
-                printf("o resultado de %d ^ %d e: %d\n", a_int, b_int, resultado_int);
+                printf("%d\n", resultado_int);
                 break;
             case 11:
                 printf("executando a questao 11...\n");
@@ -141,7 +141,7 @@ int main() {
                 printf("maximo entre dois numeros\n");
                 printf("digite dois valores inteiros separados por \"max\".\n");
                 q17_max(&a_int, &b_int, &resultado_int);
-                printf("O numero maximo e: %d\n", resultado_int);   
+                printf("%d\n", resultado_int);   
                 break;
             case 18:
                 printf("executando a questao 18...\n");
