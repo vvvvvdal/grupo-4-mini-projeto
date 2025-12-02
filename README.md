@@ -25,9 +25,6 @@ O desenvolvimento seguiu rigorosamente as instruções de utilizar funções do 
 
 Como o projeto está dividido em módulos (`main.c`, `calculadora.c` e `calculadora.h`), é necessário compilar os arquivos de código-fonte juntos.
 
-### Pré-requisitos
-* Compilador GCC instalado.
-
 ### Passo a passo
 
 -----
