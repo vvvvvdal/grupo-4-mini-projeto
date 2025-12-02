@@ -37,28 +37,6 @@ Como o projeto está dividido em módulos (`main.c`, `calculadora.c` e `calculad
 
 ### Passo a passo
 
-1. **Clone o repositório** (ou baixe os arquivos):
-   ```bash
-   git clone <link-do-seu-repositorio>
-````
-
-2.  **Compile o código** através do terminal:
-
-    ```bash
-    gcc main.c calculadora.c -o calculadora
-    ```
-
-3.  **Execute o programa:**
-
-      * **No Linux/Mac:**
-        ```bash
-        ./calculadora
-        ```
-      * **No Windows:**
-        ```bash
-        calculadora.exe
-        ```
-
 -----
 
 ## 📖 Instruções de Uso
