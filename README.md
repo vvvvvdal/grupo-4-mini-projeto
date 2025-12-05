@@ -4,6 +4,8 @@ Este projeto foi desenvolvido como atividade avaliativa da disciplina de Introdu
 
 O desenvolvimento seguiu rigorosamente as instruções de utilizar funções do tipo `void`, manipulação de ponteiros para retorno de valores e estruturação modular do código.
 
+🎥 Vídeo de apresentação: https://www.youtube.com/watch?v=mUbfXqzisuM
+
 ## 👥 Integrantes do Grupo
 
 **Alunos:**
